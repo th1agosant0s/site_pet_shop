@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt"> <!-- Tag raiz do documento. "lang" define o idioma principal do documento como português -->
+
+<head> <!-- Cabeçalho do documento que contém metadados e links -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres do documento -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o site responsivo para dispositivos móveis -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Alarcon´s pets / Clientes</title> <!-- Título que aparece na aba do navegador -->
+    <link rel="stylesheet" href="../assets/css/base/base.css">
+    <link rel="stylesheet" href="../assets/css/componentes/cabecalho.css">
+    <link rel="stylesheet" href="../assets/css/componentes/tabela.css"> 
+    <link rel="stylesheet" href="../assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/botao.css">
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css">
+    <link rel="stylesheet" href="">
+</head>
+
+<body> <!-- Corpo do documento, contém todo o conteúdo visível para o usuário -->
+
+    <header class="cabecalho container"> <!-- Cabeçalho do site, geralmente contém o logotipo, navegação, etc. -->
+        <img src="../assets/img/icon thier.png" alt="Logotipo Alarcon´s" class="cabecalho__logo">
+        <nav>
+            <ul class="cabecalho__lista-navegacao">
+                <li class="cabecalho__link"><a href="">Dashboard</a></li>
+                <li class="cabecalho__link"><a href="../telas/cadastro_produtos.html">Produtos</a></li>
+                <li class="cabecalho__link"><a href="../telas/cadastra_cliente.html">Clientes</a></li>
+                <li class="cabecalho__link"><a href="#">Pets</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container flex flex--centro flex--coluna"> <!-- Conteúdo principal do site -->
+        <section class="cartao cadastro"> <!-- Uma seção específica dentro do conteúdo principal -->
+            <h1 class="cartao__titulo">Cadastrar um Produto</h1>
+            <form class="flex flex--coluna" data-form> <!-- Formulário de cadastro de clientes -->
+                <div class="input-container">
+                    <label class="input-label" for="nome">Nome</label>
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Digite o seu Nome" required data-produto>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div>
+                <div class="input-container">
+                    <label class="input-label" for="email">Preço</label>
+                    <input name="preço" id="preço" class="input" type="text" placeholder="Digite o preço" required data-preco>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div>
+                <div class="input-container">
+                    <label class="input-label" for="email">Descrição</label>
+                    <input name="descrição" id="descrição" class="input" type="text" placeholder="Digite a descrição" required data-desc>
+                    <span class="input-mensagem-erro">Esse campo não pode estar vazio</span>
+                </div>
+                <button type="submit" class="botao">Cadastrar Produto</button>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="../controller/cadastraProduto-controller.js"></script> <!-- Script JS para interação e funcionalidade -->
+</body>
+
+
+
+</html> <!-- Final do documento HTML -->
